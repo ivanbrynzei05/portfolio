@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav data-aos="fade-right" class="nav">
+        <button class="nav-btn"></button>
+        <ul>
+            <li>
+                <a href="#home" class="nav__link">
+                    <svg fill="currentColor" viewBox="-2 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin" class="jam jam-home"><path d='M18 18V7.132l-8-4.8-8 4.8V18h4v-2.75a4 4 0 1 1 8 0V18h4zm-6 2v-4.75a2 2 0 1 0-4 0V20H2a2 2 0 0 1-2-2V7.132a2 2 0 0 1 .971-1.715l8-4.8a2 2 0 0 1 2.058 0l8 4.8A2 2 0 0 1 20 7.132V18a2 2 0 0 1-2 2h-6z'/></svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav__link">
+                    <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 35 35" data-name="Layer 2" id="a7ce4915-3aac-4be4-ab11-f637a8342592" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,16.383a8.067,8.067,0,1,1,8.067-8.067A8.076,8.076,0,0,1,17.5,16.383Zm0-13.633a5.567,5.567,0,1,0,5.567,5.566A5.573,5.573,0,0,0,17.5,2.75Z"/><path d="M31.477,34.75a1.25,1.25,0,0,1-1.23-1.037A12.663,12.663,0,0,0,17.5,22.852,12.663,12.663,0,0,0,4.753,33.713a1.25,1.25,0,0,1-2.464-.426A15.1,15.1,0,0,1,17.5,20.352,15.1,15.1,0,0,1,32.711,33.287a1.25,1.25,0,0,1-1.02,1.444A1.2,1.2,0,0,1,31.477,34.75Z"/></svg>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#resume" class="nav__link">
+                    <svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3 2.5C3 2.22386 3.22386 2 3.5 2H9.08579C9.21839 2 9.34557 2.05268 9.43934 2.14645L11.8536 4.56066C11.9473 4.65443 12 4.78161 12 4.91421V12.5C12 12.7761 11.7761 13 11.5 13H3.5C3.22386 13 3 12.7761 3 12.5V2.5ZM3.5 1C2.67157 1 2 1.67157 2 2.5V12.5C2 13.3284 2.67157 14 3.5 14H11.5C12.3284 14 13 13.3284 13 12.5V4.91421C13 4.51639 12.842 4.13486 12.5607 3.85355L10.1464 1.43934C9.86514 1.15804 9.48361 1 9.08579 1H3.5ZM4.5 4C4.22386 4 4 4.22386 4 4.5C4 4.77614 4.22386 5 4.5 5H7.5C7.77614 5 8 4.77614 8 4.5C8 4.22386 7.77614 4 7.5 4H4.5ZM4.5 7C4.22386 7 4 7.22386 4 7.5C4 7.77614 4.22386 8 4.5 8H10.5C10.7761 8 11 7.77614 11 7.5C11 7.22386 10.7761 7 10.5 7H4.5ZM4.5 10C4.22386 10 4 10.2239 4 10.5C4 10.7761 4.22386 11 4.5 11H10.5C10.7761 11 11 10.7761 11 10.5C11 10.2239 10.7761 10 10.5 10H4.5Z"
+                        fill="currentColor"
+                        />
+                    </svg>
+                    <span>Resume</span>
+                </a>
+            </li>
+            <li>
+                <a href="#technology" class="nav__link">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 8L3 12L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 8L21 12L17 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 4L9.8589 19.4548" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Technology stack</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contacts" class="nav__link">
+                    <svg fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M21,7.38246601 L21,5 L3,5 L3,7.38199365 L12.0000224,11.8824548 L21,7.38246601 Z M21,9.61853399 L11.9999776,14.1185452 L3,9.61810635 L3,19 L21,19 L21,9.61853399 Z M3,3 L21,3 C22.1045695,3 23,3.8954305 23,5 L23,19 C23,20.1045695 22.1045695,21 21,21 L3,21 C1.8954305,21 1,20.1045695 1,19 L1,5 C1,3.8954305 1.8954305,3 3,3 Z"/>
+                    </svg>
+                    <span>Contacts</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header data-scroll id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" >Welcome to my portfolio</h1>
+                <h2 data-aos="fade-up" data-aos-delay="50">I'm Frontent Developer</h2>
+                <ul data-aos="fade-up" data-aos-delay="100" class="social-media hero__social-media">
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                        </a>
+                    </li>
+                    <li><a href="images/CV.pdf" download class="button">Download CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section data-scroll id="about" class="p-50 about">
+            <div class="container">
+                <div data-aos="fade-up" class="title">
+                    <h2>About</h2>
+                </div>
+                <div class="about-grid">
+                    <img data-aos="fade-up" src="images/about.jpg" alt="">
+                    <div class="about-text">
+                        <div data-aos="fade-up" data-aos-delay="50" class="title about-text__title">
+                            <h3>Frontent Developer</h3>
+                        </div>
+                        <ul data-aos="fade-up" data-aos-delay="100">
+                            <li>Name: <span>Ivan</span></li>
+                            <li>Birthday: <span>19.05.2005</span></li>
+                            <li>Age: <span class="age"></span></li>
+                            <li>Country: <span>Ukraine</span></li>
+                            <li>Study at: <span>Taras Shevchenko Kyiv National University</span></li>
+                            <li>Email: <span><a href="mailto:ivanbrynzei05@gmail.com">ivanbrynzei05@gmail.com</a></span></li>
+                            <li>Life credo: <span>Write code as if the person who will maintain it after you knows where you live.</span></li>
+                        </ul>
+                        <p data-aos="fade-up" data-aos-delay="150">
+                            I am a programmer who strives for perfection. I constantly learn new things, implement advanced technologies, write clean code and focus on user needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section data-scroll id="resume" class="p-50 resume">
+            <div class="container">
+                <div class="title" data-aos="fade-up">
+                    <h2>Resume</h2>
+                </div>
+                <div class="resume-grid">
+                    <div class="resume__item">
+                        <div data-aos="fade-up" data-aos-delay="50" class="title resume__item__title">
+                            <h3>Education</h3>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="100" class="resume__item-content">
+                            <h4>Information and software processing operator</h4>
+                            <span>2020 - 2023</span>
+                            <p>
+                                My first education is an information processing and software operator. Here I was taught to work with various software tools for information processing. During this period, I became interested in websites and wrote my first simple website. In 2023, I began to deeply study Java Script and various technologies for sites (Git, Galp, Webpack, etc.).
+                            </p>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="150" class="resume__item-content">
+                            <h4>Software engineering</h4>
+                            <span>2023 - present</span>
+                            <p>
+                                Taras Shevchenko Kyiv National University. Here I study various programming languages ​​(C#, C++, etc.), principles of OOP and many other things.
+                            </p>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="200" class="resume__item-content">
+                            <h4>Self-study</h4>
+                            <span>2022 - present</span>
+                            <p>
+                                Starting from 2022, I study everything related to the development of web pages. I completed a course on web development and a course on Java Script + React on the <a target="_blank" href="https://www.udemy.com/">Udemy</a> platform and I am constantly learning a lot of new things from free sources.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="resume__item">
+                        <div data-aos="fade-up" data-aos-delay="250" class="title resume__item__title">
+                            <h3>Professional development</h3>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="300" class="resume__item-content">
+                            <h4>Development of projects</h4>
+                            <p>
+                                Constantly, when I learn some new technologies, I create projects with the help of which I can consolidate my knowledge in practice
+                                You can view some of them in my <a target="_blank" href="https://github.com/ivanbrynzei05">GitHub</a>
+                            </p>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-delay="350" class="resume__item-content">
+                            <h4>Coming soon</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        <section data-scroll id="technology" class="p-50 splide technology ">
+            <div class="container">
+                <div class="title" data-aos="fade-up">
+                    <h2>Technology stack</h2>
+                </div>
+                <div class="technology-grid" data-aos="fade-up" data-aos-delay="50">
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section class="progress">
+            <div class="container">
+                <div class="progress-content" data-aos="fade-up" data-aos-delay="600">
+                </div>
+            </div>
+        </section>
+        
+        <section data-scroll id="contacts" class="p-50 contacts">
+            <div class="container">
+                <div class="title" data-aos="fade-up">
+                    <h2>Contacts</h2>
+                </div>
+                <div class="contacts-form">
+                    <form action="https://formsubmit.co/ivanbrynzei05@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div data-aos="fade-up" data-aos-delay="50" class="contacts-form__input name">
+                            <label for="name">Name</label>
+                            <input class="active" type="text" id="name" name="name" required autocomplete="off">
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="100" class="contacts-form__input email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="150" class="contacts-form__input subject">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div  data-aos="fade-up" data-aos-delay="200"class="contacts-form__input message">
+                            <label for="message"></label>
+                            <textarea placeholder="Message" id="message" name="message" required></textarea>
+                        </div>
+                        <button data-aos="fade-up" data-aos-delay="250" class="button contacts-form__button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="p-50 footer">
+        <div class="container">
+            <div class="p-50 footer-grid">
+                <ul data-aos="fade-up" data-aos-delay="50" class="social-media footer__social-media">
+                    <li>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+                        </a>
+                    </li>
+                    <li><a href="images/CV.pdf" download class="button">Download CV</a></li>
+                </ul>
+                <ul data-aos="fade-up" data-aos-delay="100" class="footer__nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#technology">Technology stack</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
