@@ -141,14 +141,6 @@ const technologiesStack = [
             'Async actions',
             'Redux Toolkit'
         ]
-    },
-    {
-        id: 11,
-        name: 'sass',
-        skill: 15,
-        knowledge: [
-
-        ]
     }
 ];
 
