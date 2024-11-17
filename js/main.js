@@ -2,6 +2,7 @@ const technologiesStack = [
     {
         id: 1,
         name: 'html',
+        icon: 'html',
         skill: 95,
         knowledge: [
             'Semantic HTML',
@@ -16,6 +17,7 @@ const technologiesStack = [
     {
         id: 2,
         name: 'css',
+        icon: 'css',
         skill: 90,
         knowledge: [
             'CSS3 features (e.g., Flexbox, Grid)',
@@ -31,6 +33,7 @@ const technologiesStack = [
     {
         id: 3,
         name: 'js',
+        icon: 'js',
         skill: 85,
         knowledge: [
             'ES6+ features (let/const, arrow functions, promises)',
@@ -45,21 +48,22 @@ const technologiesStack = [
     },
     {
         id: 4,
-        name: 'sass',
-        skill: 90,
+        name: 'python',
+        icon: 'python',
+        skill: 70,
         knowledge: [
-            'Variables',
-            'Nesting',
-            'Partials and imports',
-            'Mixins',
-            'Inheritance and extends',
-            'Functions',
-            'Control directives (if, for, each, while)'
+            'Flask Application Structure',
+            'Routing and URL Mapping',
+            'HTTP Methods (GET, POST, PUT, DELETE)',
+            'SQLAlchemy ORM',
+            'Querying and CRUD Operations',
+            'Flask Error Handling'
         ]
     },
     {
         id: 5,
         name: 'figma',
+        icon: 'figma',
         skill: 80,
         knowledge: [
             'Creating designs and prototypes',
@@ -74,6 +78,7 @@ const technologiesStack = [
     {
         id: 6,
         name: 'git',
+        icon: 'git',
         skill: 75,
         knowledge: [
             'Version control basics (init, add, commit, status)',
@@ -87,20 +92,8 @@ const technologiesStack = [
     },
     {
         id: 7,
-        name: 'gulp',
-        skill: 75,
-        knowledge: [
-            'Task automation',
-            'Creating and using Gulp tasks',
-            'Plugins for common tasks (e.g., minification, transpilation)',
-            'Pipelines and streams',
-            'Error handling in Gulp tasks',
-            'Watching files for changes'
-        ]
-    },
-    {
-        id: 8,
         name: 'webpack',
+        icon: 'webpack',
         skill: 75,
         knowledge: [
             'Module bundling',
@@ -114,8 +107,9 @@ const technologiesStack = [
         ]
     },
     {
-        id: 9,
+        id: 8,
         name: 'react',
+        icon: 'react',
         skill: 85,
         knowledge: [
             'JSX syntax',
@@ -129,8 +123,9 @@ const technologiesStack = [
         ]
     },
     {
-        id: 10,
+        id: 9,
         name: 'redux',
+        icon: 'redux',
         skill: 75,
         knowledge: [
             'Store, actions, reducers',
@@ -140,6 +135,18 @@ const technologiesStack = [
             'Redux DevTools',
             'Async actions',
             'Redux Toolkit'
+        ]
+    },
+    {
+        id: 10,
+        name: 'asp.net',
+        icon: 'csharp',
+        skill: 45,
+        knowledge: [
+            'ASP.NET Core Application Structure',
+            'Routing and URL Mapping',
+            'Models, Views, Controllers (MVC)',
+            'Code-First and Database-First Approaches',
         ]
     }
 ];
@@ -222,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let delay = 50;
 
         technologiesStack.forEach(elem => {
-            const technologyWrapper = document.createElement('div'); // обёртка для каждого элемента
+            const technologyWrapper = document.createElement('div');
             const technologyItem = document.createElement('button');
             const technologyItemIcon = document.createElement('img');
             const technologyText = document.createElement('h4');
@@ -234,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             technologyItem.setAttribute('data-id', elem.id);
             technologyItem.classList.add('technology__item');
-            technologyItemIcon.src = `icons/tech/${elem.name}.svg`;
+            technologyItemIcon.src = `icons/tech/${elem.icon}.svg`;
             technologyItemIcon.classList.add('technology__item-icon');
             technologyText.textContent = elem.name;
 
@@ -314,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     progressGrid.append(progressWrapper);
 
                     const image = document.createElement('img');
-                    image.src = `icons/tech/${elem.name}.svg`;
+                    image.src = `icons/tech/${elem.icon}.svg`;
                     image.alt = elem.name;
 
                     progressGrid.append(image);
@@ -391,5 +398,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTechnologiesStack();
     scrollToCenter();
     setTechnologiesStackInfo();
-
 })
